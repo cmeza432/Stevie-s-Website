@@ -96,3 +96,19 @@ body {
   .profile-content-wrapper h1 {
     color: white;
   }
+
+  .creator {
+      text-align: center;
+      padding-top: 10%;
+      padding-bottom: 0;
+      color: black;
+      font-size: 15px;
+  }
+
+  .logo-final img {
+    width: 3%;
+    margin-bottom: 2px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
