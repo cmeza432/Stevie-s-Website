@@ -9,8 +9,12 @@
     <body>
 
         <!-- Header values for Name and bio -->
-        <div class="header">
-            <h1> Steve Giron </h1>
+        <div class="banner">
+            <img src="images/banner.jpg" alt="water" style="width:100%; height:500px">
+            <div class="name_banner">
+                <h1> Steve Giron </h1>
+            </div>
+            
         </div>
 
         <div class="mid">
@@ -23,6 +27,64 @@
             </p>
         </div>
 
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="portfolio-items-wrapper">
+        
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/image1.jpg)"></div>
+        
+                    <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="https://www.flaticon.com/premium-icon/icons/svg/2585/2585161.svg" alt="">
+                    </div>
+        
+                    <div class="subtitle"> Follow me on Spotify </div>
+                    </div>
+                </div>
+        
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/image2.jpg)"></div>
+                    <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="https://image.flaticon.com/icons/svg/2111/2111463.svg" alt="">
+                    </div>
+        
+                    <div class="subtitle"> Follow me on Instagram </div>
+                    </div>
+                </div>
+        
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image:url(images/image3.jpg)"></div>
+                    <div class="img-text-wrapper">
+                    <div class="logo-wrapper">
+                        <img src="https://www.flaticon.com/premium-icon/icons/svg/2504/2504939.svg" alt="">
+                    </div>
+        
+                    <div class="subtitle"> Follow me on Soundcloud </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+
     </body>
+
+    <script>
+        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
+
+        portfolioItems.forEach(portfolioItem => {
+            portfolioItem.addEventListener('mouseover', () => {
+                console.log(portfolioItem.childNodes[1].classList)
+                portfolioItem.childNodes[1].classList.add('image-blur');
+            });
+
+        portfolioItem.addEventListener('mouseout', () => {
+            console.log(portfolioItem.childNodes[1].classList)
+            portfolioItem.childNodes[1].classList.remove('image-blur');
+            });
+        });
+
+    </script>
 
 </html>
