@@ -61,12 +61,12 @@ body {
   }
   
   .img-text-wrapper .subtitle {
-    transition: 500ms;
+    transition: 1s;
     color: transparent;
   }
 
   .image-blur {
-    transition: 500ms;
+    transition: 1s;
     filter: brightness(10%);
   }
   
@@ -76,7 +76,7 @@ body {
   }
   
   .logo-wrapper img {
-    width: 15%;
+    width: 25%;
     margin-bottom: 20px;
   }
   

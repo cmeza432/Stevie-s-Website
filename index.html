@@ -8,7 +8,7 @@
 
     <body>
 
-        <!-- Header values for Name and bio -->
+        <!-- Banner class for Name and Banner image -->
         <div class="banner">
             <img src="images/banner.jpg" alt="water" style="width:100%; height:500px">
             <div class="name_banner">
@@ -17,6 +17,7 @@
             
         </div>
 
+        <!-- Paragraph between banner and clickable links -->
         <div class="mid">
             <p>
                 Hey guys, my name is Stevie Giron and I love to create. 
@@ -27,28 +28,33 @@
             </p>
         </div>
 
+        <!-- Content wrapper for images and links to social media -->
         <div class="container">
             <div class="content-wrapper">
                 <div class="portfolio-items-wrapper">
         
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style="background-image:url(images/image1.jpg)"></div>
-        
+                    
                     <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="https://www.flaticon.com/premium-icon/icons/svg/2585/2585161.svg" alt="">
-                    </div>
+                        <div class="logo-wrapper">
+                            <a href="https://open.spotify.com/album/2rFMUkpnDzP6yBX6Si4JjQ">
+                                <img src="https://www.flaticon.com/premium-icon/icons/svg/2585/2585161.svg" alt="">
+                            </a>
+                        </div>
         
-                    <div class="subtitle"> Follow me on Spotify </div>
+                    <div class="subtitle">  Follow me on Spotify </div>
                     </div>
                 </div>
         
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style="background-image:url(images/image2.jpg)"></div>
                     <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="https://image.flaticon.com/icons/svg/2111/2111463.svg" alt="">
-                    </div>
+                        <div class="logo-wrapper">
+                            <a href="https://www.instagram.com/invites/contact/?i=ko3euk8fbf83&utm_content=26k5ouc">
+                                <img src="https://image.flaticon.com/icons/svg/2111/2111463.svg" alt="">
+                            </a>
+                        </div>
         
                     <div class="subtitle"> Follow me on Instagram </div>
                     </div>
@@ -57,9 +63,11 @@
                 <div class="portfolio-item-wrapper">
                     <div class="portfolio-img-background" style="background-image:url(images/image3.jpg)"></div>
                     <div class="img-text-wrapper">
-                    <div class="logo-wrapper">
-                        <img src="https://www.flaticon.com/premium-icon/icons/svg/2504/2504939.svg" alt="">
-                    </div>
+                        <div class="logo-wrapper">
+                            <a href="https://m.soundcloud.com/avg_vstine">
+                                <img src="https://www.flaticon.com/premium-icon/icons/svg/2504/2504939.svg" alt="">
+                            </a>
+                        </div>
         
                     <div class="subtitle"> Follow me on Soundcloud </div>
                     </div>
@@ -70,6 +78,7 @@
 
     </body>
 
+    <!-- Javasctipt method to shadow images once clicked upon -->
     <script>
         const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
 
