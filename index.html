@@ -3,7 +3,7 @@
 
     <head>
         <title> Stevie's Webpage </title>
-        <link href="main.css" rel="stylesheet" type="text/css" />
+        <link href="index.css" rel="stylesheet" type="text/css" />
     </head>
 
     <body>
@@ -18,7 +18,8 @@
 
         <!-- Paragraph between banner and clickable links -->
         <div class="mid">
-            <p>
+            <h1 style="font-size: 3vw; font-weight: bold;">About Me</h1>
+            <p style="font-size: 1.5vw;">
                 Hey guys, my name is Stevie Giron and I love to create. 
                 That can mean writing and playing my songs on my guitar. Thinking
                 of beats I can make which can be for any genre of music or even a 
@@ -76,35 +77,17 @@
         </div>
 
         <!-- Footer class with creator details -->
-        <div class="creator">
-            <p> Created by Carlos Meza </p>
-        </div>
         <div class="footer">
+            <p class="creator"> Created by Carlos Meza </p>
             <div class="logo-final">
                 <a href="https://carlos-meza-203ce6.netlify.com/">
                     <img src="https://image.flaticon.com/icons/svg/547/547432.svg" alt="">
                 </a>
             </div>
         </div>
-
     </body>
 
     <!-- Javasctipt method to shadow images once clicked upon -->
-    <script>
-        const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper');
-
-        portfolioItems.forEach(portfolioItem => {
-            portfolioItem.addEventListener('mouseover', () => {
-                console.log(portfolioItem.childNodes[1].classList)
-                portfolioItem.childNodes[1].classList.add('image-blur');
-            });
-
-        portfolioItem.addEventListener('mouseout', () => {
-            console.log(portfolioItem.childNodes[1].classList)
-            portfolioItem.childNodes[1].classList.remove('image-blur');
-            });
-        });
-
-    </script>
+    <script src="index.js"></script>
 
 </html>
